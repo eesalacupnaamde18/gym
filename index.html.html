@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>College Gym</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; scroll-behavior: smooth; }
+        body { color: #fff; background: linear-gradient(135deg, #1a1a1a, #111); }
+        a { text-decoration: none; color: inherit; }
+        img, video { max-width: 100%; display: block; border-radius: 10px; }
+
+        header { position: fixed; width: 100%; top: 0; left: 0; background: rgba(0,0,0,0.8); padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+        header h1 { font-size: 28px; color: red; font-weight: bold; }
+        nav a { margin-left: 20px; color: #fff; font-weight: bold; font-size: 18px; transition: 0.3s; }
+        nav a:hover { color: red; }
+
+        .hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+        .hero-content { position: relative; z-index: 2; color: #fff; }
+        .hero-content h2 { font-size: 60px; font-weight: bold; }
+        .hero-content p { font-size: 24px; font-weight: bold; }
+        .btn { background: red; padding: 15px 30px; border-radius: 10px; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #ff4d4d; }
+
+        section { padding: 100px 50px; text-align: center; }
+        section h2 { font-size: 40px; margin-bottom: 40px; color: red; }
+        .gallery, .trainers, .facilities, .membership, .contact-container { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+        .card { background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; width: 320px; text-align: center; backdrop-filter: blur(10px); }
+        .card img { width: 100%; height: auto; }
+
+        .facilities, .contact-container { background-color: #222; padding: 50px; border-radius: 10px; }
+        .contact-container form { max-width: 600px; display: flex; flex-direction: column; gap: 20px; }
+        .contact-container input, .contact-container textarea { padding: 15px; border: none; border-radius: 5px; }
+        .contact-container button { background: red; padding: 15px; border: none; border-radius: 5px; font-weight: bold; }
+        
+        .chat-button { position: fixed; bottom: 20px; right: 20px; background: red; padding: 15px 20px; border-radius: 50px; font-weight: bold; color: white; cursor: pointer; box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5); }
+        .chat-button:hover { background: #ff4d4d; }
+
+        footer { background: #000; padding: 30px 50px; text-align: center; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>Fitness Freaks</h1></u>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#membership">Membership</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+ <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="C:\Users\ARMAN SHAIKH\OneDrive\Desktop\html\gym video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h2>Unleash Your Potential</h2>
+            <p>Train. Transform. Triumph.</p>
+            <a href="#membership" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <section id="trainers" class="trainers">
+        <h2><u>Meet Our Trainers</h2></u>
+        <div class="card"><img src="https://th.bing.com/th/id/OIP.8IxWT9ZLZKKaLYmtQaw2VgHaJC?w=129&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="trainer 1"><p> RajKumar  - Strength Coach</p></div>
+        <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.JKYwx7Df_eRJ1nLpGdTxzwHaIg&pid=Api&P=0&h=180" alt="Trainer 2"><p>lana clover - Cardio Specialist</p></div>
+        <div class="card"><img src="https://th.bing.com/th/id/OIP.QPFALVbkQmaZEMuG27imJwHaNK?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Trainer 3"><p>  Chris Bumstead - Personal Trainer</p></div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2><u>Gallery</h2></u>
+        <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.H-A4Wmqn7dJ3IRgG4PeRHgHaE7&pid=Api&P=0&h=180" alt="Gym Image 1"></div>
+        <div class="card"><img src="https://tse3.mm.bing.net/th?id=OIP.ZIZS3k0KIkQ5OVUIdtjp-AHaE8&pid=Api&P=0&h=180" alt="Gym Image 2"></div>
+        <div class="card"><img src="https://tse1.mm.bing.net/th?id=OIP.GFyMOJOiG3Rt6HE0I0L7ZAHaEJ&pid=Api&P=0&h=180" alt="Gym Image 3"></div>
+        <div class="card"><img src="https://tse4.mm.bing.net/th?id=OIP.mWZIKQ3gfoUIH3kcuqNhBwHaEK&pid=Api&P=0&h=180S" alt="Gym Image 4"></div>
+    </section>
+
+    <section id="facilities" class="facilities">
+        <h2><u>Sports Facilities</h2></u>
+        <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.eRHiqC54V6LLsDPbWeMkmAHaFj&pid=Api&P=0&h=180" alt="Facility 1"><p>Indoor Basketball Court</p></div>
+        <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.Z3vopPvk6xtSohtfhE7bZgHaE9&pid=Api&P=0&h=180" alt="Facility 2"><p>Swimming Pool</p></div>
+        <div class="card"><img src="https://tse2.mm.bing.net/th?id=OIP.KMWk9NJ1gNlT9Ov_0HZ4SQHaE7&pid=Api&P=0&h=180" alt="Facility 3"><p>Track & Field</p></div>
+    </section>
+
+    <section id="membership" class="membership">
+        <h2><u>Membership Plans</h2></u>
+        <div class="card"><h3>Basic</h3><p>Gym Equipment Access</p><p>₹2000 / month</p><a href="#" class="btn">Join</a></div>
+        <div class="card"><h3>Standard</h3><p>Equipment + Classes</p><p>₹3500 / month</p><a href="#" class="btn">Join</a></div>
+        <div class="card"><h3>Premium</h3><p>All Access + Personal Trainer</p><p>₹5000 / month</p><a href="#" class="btn">Join</a></div>
+    </section>
+
+    <section id="contact" class="contact-container">
+        <h2><u>Contact Us</h2></u>
+        <p>Call us: +123 456 7890</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div class="chat-button">Chat with us</div>
+
+    <footer>
+        &copy; 2025 College Gym | All Rights Reserved
+    </footer>
+</body>
+</html>
